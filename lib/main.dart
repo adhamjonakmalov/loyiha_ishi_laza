@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loyiha_ishi_laza/model/mode_provider.dart';
 import 'package:loyiha_ishi_laza/ui/screen.dart';
+import 'package:loyiha_ishi_laza/ui/screen4.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -24,9 +25,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Screen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Screen(),
+        'a': (context) => Screen4(),
+      },
     );
   }
 }

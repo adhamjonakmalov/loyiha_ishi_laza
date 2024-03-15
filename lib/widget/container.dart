@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:loyiha_ishi_laza/widget/list/data.dart';
 
 class ContainerMenWomen extends StatelessWidget {
   double width;
@@ -22,7 +21,10 @@ class ContainerMenWomen extends StatelessWidget {
           Container(
             width: 40,
             height: 40,
-            decoration: BoxDecoration(color: Color(0xFFFEFEFE), borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(
+              color: Color(0xFFFEFEFE),
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: Image.asset(image),
           ),
           Text(text),

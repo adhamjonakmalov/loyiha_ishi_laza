@@ -26,8 +26,9 @@ class _Screen3State extends State<Screen3> {
         backgroundColor: Colors.white,
       ),
       drawer: Drawer(
-        backgroundColor: Colors.black,
+        shadowColor: Colors.red,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CircleAvatar(
               backgroundColor: Colors.white,
@@ -100,7 +101,7 @@ class _Screen3State extends State<Screen3> {
               ],
             ),
             Text('New Arraival', style: TextStyle(fontSize: 17)),
-            ContainerMenWomen1()
+            ContainerMenWomen1(),
           ],
         ),
       ),
